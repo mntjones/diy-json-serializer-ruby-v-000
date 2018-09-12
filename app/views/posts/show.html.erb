@@ -5,7 +5,6 @@
 
 <script type="text/javascript">
   $(function(){
-    debugger
     $(".js-next").on('click', function(){
       var id = parseInt($(".js-next").attr("data-id")) + 1
       $.get("/posts/" + id + "/post_data", function(data){
